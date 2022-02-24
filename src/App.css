@@ -1,0 +1,76 @@
+
+.App{
+  height: 100vh;
+  background: #697ac4c9;
+  /* background-repeat:repeat; */
+}
+
+.nav{
+  background-color: #1a1b53;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+}
+.nav .getBtn button{
+  padding: 7px;
+  background-color: #ffffff;
+  color: #2f308d;
+  font-size: 20px;
+  font-weight: bold;
+  border: 3px black;
+  border-radius: 3px;
+  cursor:progress;
+  transition: all .1s ease-in-out;
+}
+.nav .getBtn button:hover{
+  background-color: #83827d;
+  color: #ffffff;
+}
+
+.nav .name{
+  font-size: 42px;
+  color: white;
+  font-weight: bolder;
+}
+.row{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.row .col{
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+}
+.loader {
+  align-items: center;
+  border-radius: 50%;
+  border-top: 10px solid #ffffff;
+  border-right: 10px solid #0004f7;
+  border-bottom: 10px solid #fffffd;
+  border-left: 10px solid #0004ff;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 10s linear infinite;
+ position: absolute;
+ top: 45%;
+ right: 50%;
+ left: 48%;
+ bottom: 50%;
+ transform: translate(-50%,-50%);
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(3600deg); }
+}
